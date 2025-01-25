@@ -10,7 +10,6 @@
     height: 550px;
     margin: 100px auto;
     padding: 10px;
-    // position: absolute;
 }
 @mixin wrapper{
     h2{
@@ -37,15 +36,7 @@
         text-decoration: none;
         color:white;
     }
-}  
-// @mixin content{
-//     width:300px;
-//     height: 250px;
-//     background-color: #9dbcad;
-// }  
-
-
-
+} 
 .container{
     @include container();
 }
@@ -58,25 +49,20 @@
     @include wrapper();
 }
 .content{
-    // position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    // margin-top: 40px;
 }
 @mixin content{
     width:280px;
     height: 360px;
-    // margin-top: 50px;
     margin-top: -230px;
     box-sizing: content-box;
     background-color: #9dbcad;
     border-top-right-radius: 250px;
     border-style: solid;
-    // border-color: #9dbcad transparent;
-
-    p{
+p{
     padding-top: 120px;
     text-align: center;
     padding-left: 10px;
@@ -86,7 +72,7 @@
 }
 .content1{
 @include content();
-  button{
+button{
     text-align: center;
     font-size: 15px;
     margin-left: 80px;
@@ -96,8 +82,7 @@
 }
 }
 .content2{
-   
-    @include content();
+@include content();
 }
 .content3{
     @include content();
